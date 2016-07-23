@@ -1,0 +1,69 @@
+<div class="primary">
+    <header>
+        <img src="/images/about-me/square-sns.jpg" alt="Author thumbnail" class="dot sns-pic-limit">
+        <h1>
+            {{ site.author }}
+        </h1>
+        <span class="desc">{{ site.author_introduction }}
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/"><i class="fa fa-home"></i>&nbsp;&nbsp;首页</a>
+                </li>
+                <li>
+                    <a href="/bibliography/" target="_blank"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;我的书单</a>
+                </li>
+                <li>
+                    <a href="/webdevtools/" target="_blank"><i class="fa fa-wrench"></i>&nbsp;&nbsp;开发工具</a>
+                </li>
+                <li>
+                    <a href="/about-me/" target="_blank"><i class="fa fa-user"></i>&nbsp;&nbsp;关于我</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ads">
+
+        <h2>CATEGORIES</h2>
+        <ul class="tag-box inline">
+            {% assign categories_list = site.categories %}
+            {% include JB/categories_list %}
+        </ul>
+
+        <div class="fusionads">
+            <h2>FIND&nbsp;ME&nbsp;ON&nbsp;</h2>
+
+        <span class="fusionentire desc">
+            {% include widget_contact.html %}
+        </span>
+        </div>
+
+        <div class="fusionads">
+            <h2>MY&nbsp;WECHAT</h2>
+
+        <span class="fusionentire desc">
+            <img src="/images/about-me/qrcode-weixin.png" style="width:129px">
+        </span>
+        </div>
+
+        <div class="fusionads">
+            <h2>BLOGROLL</h2>
+            <span class="fusionentire desc">
+                {% include widget_blogroll.html %}
+            </span>
+        </div>
+
+        {% include baidu_share.html %}
+
+        <div class="fusionads">
+            <h2>COPYRIGHT</h2>
+            <span class="fusionentire desc">
+                {% include widget_license.html %}
+            </span>
+        </div>
+
+    </div><!-- .ads -->
+
+</div><!-- .primary -->

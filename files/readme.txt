@@ -1,0 +1,20 @@
+按照日期的目录放置附件文件,目录结构类似如下:
+files
+    -2010
+        -01
+            -1.png
+            -2.png
+        -02
+            -1.png
+            -2.png
+    -2011
+        -05
+            -1.png
+            -2.png
+        -06
+            -1.png
+            -2.png
+    -common
+        -404.jpg
+        -503.jpg
+        -qrcode.jpg

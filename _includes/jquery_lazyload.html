@@ -1,0 +1,11 @@
+<script src="/lib/jquery/jquery-1.11.3.min.js"></script>
+<script src="/lib/jquery/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("img").lazyload({
+            effect : "fadeIn",
+            threshold : 200,
+            skip_invisible : true
+        });
+    });
+</script>

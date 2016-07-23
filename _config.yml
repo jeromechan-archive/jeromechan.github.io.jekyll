@@ -1,0 +1,25 @@
+baseurl:
+url: "http://aboutcoder.com"
+production_url: "http://aboutcoder.com"
+name: About Coder
+description: About Coder | Light, Bright, Sky – Talk About Development
+author: Jerome Chan
+author_introduction: Hello! I am a mixed web developer and blogger from China. Currently I work for Tuniu Corperation. I love to write about daily issues and web development trends. Welcome to write down your feelings about articles I wrote, and every visitor can find out more about me through Twitter, Facebook, Sina Weibo, GitHub and LinkedIn.
+email: admin@aboutcoder.com
+permalink: /weblog/:categories/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+encoding: "utf-8"
+markdown_ext: "markdown,md"
+JB :
+  categories_path: categories.html
+safe: true
+paginate: 30
+paginate_path: "page:num"
